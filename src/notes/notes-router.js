@@ -95,7 +95,7 @@ notesRouter.route('/:note_id')
 
         NotesServices.deleteNote(knexInstance, noteId)
             .then(numRowsAffected => {
-                res.status(204).end()
+                res.status(204)
             })
             .catch(next)
     })
